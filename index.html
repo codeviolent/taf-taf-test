@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TAF TAF</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: url(layered-peaks-haikei.svg) no-repeat center ;
+      background-size: cover;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      padding: 0 5%;
+    }
+
+    .logo {
+      text-align: center;
+      color: white;
+    }
+
+    .logo img {
+      width: 250px;
+      
+    }
+
+    .logo h1 {
+      margin-top: 10px;
+      font-size: 2rem;
+      letter-spacing: 5px;
+    }
+
+    @keyframes handshake {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(3deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    .characters {
+        margin-top: 350px;
+      width: 50%;
+      animation: handshake 2s infinite ease-in-out;
+      color: white;
+    }
+
+    .characters img {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .characters {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="logo.png" alt="TAF TAF Logo" />
+      <h1>TAF TAF</h1>
+    </div>
+
+    <div class="characters">
+        <h2>شي تاف تاف</h2>
+      <img src="taftaf man.png" alt="Handshake Animation" />
+    </div>
+  </div>
+
+  
+</body>
+</html>
